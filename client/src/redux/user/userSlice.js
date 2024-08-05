@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { signOut } from "../../../../api/controllers/auth.controller";
 
 const initialState = {
   currentUser: null,
@@ -69,12 +68,12 @@ export const {
   updateUserFailure,
   updateUserSuccess,
   updateUserStart,
-  deleteUserStart,
-  deleteUserSuccess,
   deleteUserFailure,
-  signOutUserStart,
-  signOutUserSuccess,
+  deleteUserSuccess,
+  deleteUserStart,
   signOutUserFailure,
+  signOutUserSuccess,
+  signOutUserStart,
 } = userSlice.actions;
 
 export default userSlice.reducer;
